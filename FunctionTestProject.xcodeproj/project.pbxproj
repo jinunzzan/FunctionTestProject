@@ -16,6 +16,7 @@
 		5957E05F2A8F0BBC00839454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5957E05D2A8F0BBC00839454 /* LaunchScreen.storyboard */; };
 		5957E0682A8F0C1100839454 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5957E0672A8F0C1100839454 /* AudioToolbox.framework */; };
 		5957E06E2A8F0E6E00839454 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5957E06D2A8F0E6E00839454 /* MyView.swift */; };
+		59D9E0C22A8F18F3006B7A43 /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D9E0C12A8F18F3006B7A43 /* ShadowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5957E0602A8F0BBC00839454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5957E0672A8F0C1100839454 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5957E06D2A8F0E6E00839454 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		59D9E0C12A8F18F3006B7A43 /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				5957E05D2A8F0BBC00839454 /* LaunchScreen.storyboard */,
 				5957E0602A8F0BBC00839454 /* Info.plist */,
 				5957E0582A8F0BBB00839454 /* FunctionTestProject.xcdatamodeld */,
+				59D9E0C12A8F18F3006B7A43 /* ShadowViewController.swift */,
 			);
 			path = FunctionTestProject;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D9E0C22A8F18F3006B7A43 /* ShadowViewController.swift in Sources */,
 				5957E0542A8F0BBB00839454 /* ViewController.swift in Sources */,
 				5957E0502A8F0BBB00839454 /* AppDelegate.swift in Sources */,
 				5957E06E2A8F0E6E00839454 /* MyView.swift in Sources */,

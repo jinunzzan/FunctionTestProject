@@ -17,24 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-B0-WXm">
-                                <rect key="frame" x="170" y="329" width="54" height="35"/>
+                                <rect key="frame" x="169" y="158" width="54" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="진동"/>
                                 <connections>
                                     <action selector="Audio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsA-x1-uEi"/>
+                                    <segue destination="JNC-x4-Nt5" kind="show" id="9QE-h1-n1H"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OD7-JO-KoE" customClass="MyView" customModule="FunctionTestProject" customModuleProvider="target">
-                                <rect key="frame" x="77" y="459" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="100"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,6 +34,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="114" y="-27"/>
+        </scene>
+        <!--Shadow View Controller-->
+        <scene sceneID="Koy-a5-YbJ">
+            <objects>
+                <viewController id="JNC-x4-Nt5" customClass="ShadowViewController" customModule="FunctionTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cca-hg-x7c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OD7-JO-KoE" customClass="MyView" customModule="FunctionTestProject" customModuleProvider="target">
+                                <rect key="frame" x="76" y="320" width="241" height="143"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="IYf-lg-cmX"/>
+                                    <constraint firstAttribute="height" constant="143" id="jvo-bY-tzz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@IBInspectable, @IBDesignable 배워보기" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-ro-X13">
+                                <rect key="frame" x="24" y="109" width="345" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CSn-dI-7xF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OD7-JO-KoE" firstAttribute="leading" secondItem="CSn-dI-7xF" secondAttribute="leading" constant="76" id="7Z3-le-Pyg"/>
+                            <constraint firstAttribute="trailing" secondItem="6ge-ro-X13" secondAttribute="trailing" constant="24" id="Cdq-aZ-X6A"/>
+                            <constraint firstItem="OD7-JO-KoE" firstAttribute="centerY" secondItem="cca-hg-x7c" secondAttribute="centerY" id="GaC-kX-kEk"/>
+                            <constraint firstItem="6ge-ro-X13" firstAttribute="leading" secondItem="CSn-dI-7xF" secondAttribute="leading" constant="24" id="NnG-CB-vaw"/>
+                            <constraint firstItem="OD7-JO-KoE" firstAttribute="centerX" secondItem="cca-hg-x7c" secondAttribute="centerX" id="S0M-Iw-SDs"/>
+                            <constraint firstItem="6ge-ro-X13" firstAttribute="top" secondItem="CSn-dI-7xF" secondAttribute="top" constant="50" id="VFj-xY-F0d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xNV-bA-HRq"/>
+                    <connections>
+                        <outlet property="myView" destination="OD7-JO-KoE" id="oKQ-tl-kXE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XoU-Vr-fOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="-685"/>
         </scene>
     </scenes>
     <resources>
