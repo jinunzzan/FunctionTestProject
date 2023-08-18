@@ -14,6 +14,7 @@
 		5957E05A2A8F0BBB00839454 /* FunctionTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5957E0582A8F0BBB00839454 /* FunctionTestProject.xcdatamodeld */; };
 		5957E05C2A8F0BBC00839454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5957E05B2A8F0BBC00839454 /* Assets.xcassets */; };
 		5957E05F2A8F0BBC00839454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5957E05D2A8F0BBC00839454 /* LaunchScreen.storyboard */; };
+		5957E0682A8F0C1100839454 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5957E0672A8F0C1100839454 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5957E05B2A8F0BBC00839454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5957E05E2A8F0BBC00839454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5957E0602A8F0BBC00839454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5957E0672A8F0C1100839454 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5957E0682A8F0C1100839454 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				5957E04E2A8F0BBB00839454 /* FunctionTestProject */,
 				5957E04D2A8F0BBB00839454 /* Products */,
+				5957E0662A8F0C1100839454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				5957E0582A8F0BBB00839454 /* FunctionTestProject.xcdatamodeld */,
 			);
 			path = FunctionTestProject;
+			sourceTree = "<group>";
+		};
+		5957E0662A8F0C1100839454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5957E0672A8F0C1100839454 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
